@@ -356,17 +356,18 @@
   <div class="form-right">
 
     <div class="step active" id="step1">
-      <div class="q-number">01 — 身体の変化</div>
-      <div class="q-title">着用して、身体の<br>感覚は変わりましたか？</div>
-      <div class="q-hint">施術で感じた変化が、日常でも続いているかを教えてください。</div>
-      <div class="opts" id="q1">
-        <button class="opt" onclick="pick(this,'q1')">明らかに楽になった</button>
-        <button class="opt" onclick="pick(this,'q1')">少し楽になった気がする</button>
-        <button class="opt" onclick="pick(this,'q1')">変化はわからない</button>
-        <button class="opt" onclick="pick(this,'q1')">まだあまり着ていない</button>
+      <div class="q-number">01 — 基本情報</div>
+      <div class="q-title">年代を<br>教えてください</div>
+      <div class="q-hint">統計に使わせていただきます。</div>
+      <div class="opts" id="age">
+        <button class="opt" onclick="pick(this,'age')">20代</button>
+        <button class="opt" onclick="pick(this,'age')">30代</button>
+        <button class="opt" onclick="pick(this,'age')">40代</button>
+        <button class="opt" onclick="pick(this,'age')">50代</button>
+        <button class="opt" onclick="pick(this,'age')">60代以上</button>
       </div>
       <div class="nav">
-        <div class="step-count">1 / 6</div>
+        <div class="step-count">1 / 8</div>
         <button class="btn-next" onclick="next(1)">次へ</button>
       </div>
       <div class="step-dots" id="dots">
@@ -376,18 +377,17 @@
         <div class="step-dot"></div>
         <div class="step-dot"></div>
         <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
       </div>
     </div>
 
     <div class="step" id="step2">
-      <div class="q-number">02 — リピート意向</div>
-      <div class="q-title">また買いたいと<br>思いますか？</div>
-      <div class="q-hint">次のアイテムが出たとき、購入を考えますか？</div>
-      <div class="opts" id="q2">
-        <button class="opt" onclick="pick(this,'q2')">絶対に買う</button>
-        <button class="opt" onclick="pick(this,'q2')">たぶん買う</button>
-        <button class="opt" onclick="pick(this,'q2')">わからない</button>
-        <button class="opt" onclick="pick(this,'q2')">今のところ予定なし</button>
+      <div class="q-number">02 — 基本情報</div>
+      <div class="q-title">性別を<br>教えてください</div>
+      <div class="opts" id="gender">
+        <button class="opt" onclick="pick(this,'gender')">男性</button>
+        <button class="opt" onclick="pick(this,'gender')">女性</button>
       </div>
       <div class="nav">
         <button class="btn-back" onclick="back(2)">← Back</button>
@@ -400,18 +400,20 @@
         <div class="step-dot"></div>
         <div class="step-dot"></div>
         <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
       </div>
     </div>
 
     <div class="step" id="step3">
-      <div class="q-number">03 — 口コミ・発信</div>
-      <div class="q-title">誰かに話しましたか？<br>投稿しましたか？</div>
-      <div class="q-hint">複数選べます。</div>
-      <div class="opts" id="q3">
-        <button class="opt" onclick="multi3(this)">SNSに投稿した</button>
-        <button class="opt" onclick="multi3(this)">友人・家族に話した</button>
-        <button class="opt" onclick="multi3(this)">職場の人に話した</button>
-        <button class="opt" onclick="multi3(this)">まだ話していない</button>
+      <div class="q-number">03 — 身体の変化</div>
+      <div class="q-title">着用して、身体の<br>感覚は変わりましたか？</div>
+      <div class="q-hint">施術で感じた変化が、日常でも続いているかを教えてください。</div>
+      <div class="opts" id="q1">
+        <button class="opt" onclick="pick(this,'q1')">明らかに楽になった</button>
+        <button class="opt" onclick="pick(this,'q1')">少し楽になった気がする</button>
+        <button class="opt" onclick="pick(this,'q1')">変化はわからない</button>
+        <button class="opt" onclick="pick(this,'q1')">まだあまり着ていない</button>
       </div>
       <div class="nav">
         <button class="btn-back" onclick="back(3)">← Back</button>
@@ -424,17 +426,20 @@
         <div class="step-dot"></div>
         <div class="step-dot"></div>
         <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
       </div>
     </div>
 
     <div class="step" id="step4">
-      <div class="q-number">04 — 価格感</div>
-      <div class="q-title">価格について、<br>正直どう感じましたか？</div>
-      <div class="opts" id="q4">
-        <button class="opt" onclick="pick(this,'q4')">この価値なら安いくらい</button>
-        <button class="opt" onclick="pick(this,'q4')">妥当だと思う</button>
-        <button class="opt" onclick="pick(this,'q4')">少し高いと感じた</button>
-        <button class="opt" onclick="pick(this,'q4')">高すぎると思った</button>
+      <div class="q-number">04 — リピート意向</div>
+      <div class="q-title">また買いたいと<br>思いますか？</div>
+      <div class="q-hint">次のアイテムが出たとき、購入を考えますか？</div>
+      <div class="opts" id="q2">
+        <button class="opt" onclick="pick(this,'q2')">絶対に買う</button>
+        <button class="opt" onclick="pick(this,'q2')">たぶん買う</button>
+        <button class="opt" onclick="pick(this,'q2')">わからない</button>
+        <button class="opt" onclick="pick(this,'q2')">今のところ予定なし</button>
       </div>
       <div class="nav">
         <button class="btn-back" onclick="back(4)">← Back</button>
@@ -447,11 +452,64 @@
         <div class="step-dot"></div>
         <div class="step-dot"></div>
         <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
       </div>
     </div>
 
     <div class="step" id="step5">
-      <div class="q-number">05 — 次に欲しいもの</div>
+      <div class="q-number">05 — 口コミ・発信</div>
+      <div class="q-title">誰かに話しましたか？<br>投稿しましたか？</div>
+      <div class="q-hint">複数選べます。</div>
+      <div class="opts" id="q3">
+        <button class="opt" onclick="multi3(this)">SNSに投稿した</button>
+        <button class="opt" onclick="multi3(this)">友人・家族に話した</button>
+        <button class="opt" onclick="multi3(this)">職場の人に話した</button>
+        <button class="opt" onclick="multi3(this)">まだ話していない</button>
+      </div>
+      <div class="nav">
+        <button class="btn-back" onclick="back(5)">← Back</button>
+        <button class="btn-next" onclick="next(5)">次へ</button>
+      </div>
+      <div class="step-dots" id="dots">
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
+      </div>
+    </div>
+
+    <div class="step" id="step6">
+      <div class="q-number">06 — 価格感</div>
+      <div class="q-title">価格について、<br>正直どう感じましたか？</div>
+      <div class="opts" id="q4">
+        <button class="opt" onclick="pick(this,'q4')">この価値なら安いくらい</button>
+        <button class="opt" onclick="pick(this,'q4')">妥当だと思う</button>
+        <button class="opt" onclick="pick(this,'q4')">少し高いと感じた</button>
+        <button class="opt" onclick="pick(this,'q4')">高すぎると思った</button>
+      </div>
+      <div class="nav">
+        <button class="btn-back" onclick="back(6)">← Back</button>
+        <button class="btn-next" onclick="next(6)">次へ</button>
+      </div>
+      <div class="step-dots" id="dots">
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
+      </div>
+    </div>
+
+    <div class="step" id="step7">
+      <div class="q-number">07 — 次に欲しいもの</div>
       <div class="q-title">次に欲しいアイテムは<br>ありますか？</div>
       <div class="q-hint">複数選べます。</div>
       <div class="opts-grid" id="q5">
@@ -470,10 +528,12 @@
           style="width:100%;background:var(--bg);border:0.5px solid var(--gray4);border-radius:2px;padding:12px 14px;font-size:13px;font-family:var(--sans);font-weight:400;color:var(--black);resize:none;line-height:1.6;transition:border-color .18s;"></textarea>
       </div>
       <div class="nav">
-        <button class="btn-back" onclick="back(5)">← Back</button>
-        <button class="btn-next" onclick="next(5)">次へ</button>
+        <button class="btn-back" onclick="back(7)">← Back</button>
+        <button class="btn-next" onclick="next(7)">次へ</button>
       </div>
       <div class="step-dots" id="dots">
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
         <div class="step-dot"></div>
         <div class="step-dot"></div>
         <div class="step-dot"></div>
@@ -483,18 +543,20 @@
       </div>
     </div>
 
-    <div class="step" id="step6">
-      <div class="q-number">06 — 一言で</div>
+    <div class="step" id="step8">
+      <div class="q-number">08 — 一言で</div>
       <div class="q-title">dakeを一言で表すなら、<br>どんなブランドでしたか？</div>
       <div class="q-hint">SNSや資料に使わせていただく場合があります（お名前は出しません）。</div>
       <div class="textarea-wrap">
         <textarea id="q6" rows="4" placeholder="例：PT監修とは思えないくらいおしゃれで、毎日着たくなる"></textarea>
       </div>
       <div class="nav">
-        <button class="btn-back" onclick="back(6)">← Back</button>
+        <button class="btn-back" onclick="back(8)">← Back</button>
         <button class="btn-next" id="submitBtn" onclick="submitForm()">送信する</button>
       </div>
       <div class="step-dots" id="dots">
+        <div class="step-dot"></div>
+        <div class="step-dot"></div>
         <div class="step-dot"></div>
         <div class="step-dot"></div>
         <div class="step-dot"></div>
@@ -518,10 +580,10 @@
 </div>
 
 <script>
-  const TOTAL = 6;
+  const TOTAL = 8;
   let current = 1;
   const answers = {};
-  const SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL';
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxaAocfI-I8jqAli92fLZSY3seSF6P8HsXMHEadPWoZuPiISgRyqFR_0sO_S_QqPFfQug/exec';
 
   function updateProgress() {
     document.getElementById('progressBar').style.width = ((current - 1) / TOTAL * 100) + '%';
